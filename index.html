@@ -1,0 +1,2327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102744">
+<meta name="description" content="SCOF connects communities in Sasolburg and surrounding areas to employment, training, learnership, bursary and community opportunities.">
+<title>SCOF | Access Opportunity</title>
+
+<style>
+:root {
+    --navy: #102744;
+    --navy2: #183b60;
+    --gold: #efbd45;
+    --gold2: #ffd66e;
+    --white: #fff;
+    --bg: #f5f7fa;
+    --text: #1c2d43;
+    --muted: #6c7b8e;
+    --border: #e3e8ef;
+    --green: #1c8758;
+    --shadow: 0 15px 45px rgba(16,39,68,.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: min(1160px, 91%);
+    margin: auto;
+}
+
+/* section {
+    padding: 88px 0;
+} */
+
+/* .section-heading {
+    max-width: 720px;
+    margin-bottom: 38px;
+} */
+
+.kicker {
+    display: inline-block;
+    color: #a47819;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.heading {
+    color: var(--navy);
+    font-size: clamp(30px, 2.4vw, 47px);
+    line-height: 1.14;
+    letter-spacing: -1.3px;
+    margin-bottom: 14px;
+}
+
+.section-text {
+    font-size: 15px;
+    color: var(--muted);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 14px 20px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    font-weight: 800;
+    font-size: 13px;
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.btn-gold:hover {
+    background: var(--gold2);
+}
+
+.btn-white {
+    background: white;
+    color: var(--navy);
+}
+
+.btn-outline-white {
+    border-color: rgba(255,255,255,.45);
+    color: white;
+    background: transparent;
+}
+
+.btn-navy {
+    background: var(--navy);
+    color: white;
+}
+
+.btn-whatsapp {
+    background: var(--green);
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid var(--border);
+    color: var(--navy);
+    background: white;
+}
+
+.full {
+    width: 100%;
+}
+
+/* TOP NOTICE */
+
+/* .topline {
+    background: var(--navy);
+    color: #d6e0eb;
+    font-size: 11px;
+    padding: 8px 0;
+}
+
+.topline-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+} */
+
+/*  RESTING */
+h2 {
+    text-transform: uppercase;
+}
+
+/* HEADER */
+
+.header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 18px rgba(10,25,45,.05);
+}
+
+.header-inner {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    width: 48px;
+    height: 48px;
+    background: var(--navy);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: var(--gold);
+    font-weight: 900;
+    font-size: 22px;
+    border-bottom: 3px solid var(--gold);
+}
+
+.brand-name {
+    font-size: 17px;
+    font-weight: 900;
+    color: var(--navy);
+    letter-spacing: .5px;
+    line-height: 1.2;
+}
+
+.brand-description {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #43556b;
+}
+
+.nav a:hover {
+    color: #b08119;
+}
+
+.nav .nav-register {
+    background: var(--navy);
+    color: white;
+    padding: 12px 17px;
+    border-radius: 6px;
+}
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: none;
+    color: var(--navy);
+    font-size: 25px;
+    width: 42px;
+    height: 42px;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 610px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    isolation: isolate;
+    background-image:
+        linear-gradient(90deg,
+            rgba(7,19,34,.94) 0%,
+            rgba(7,19,34,.84) 45%,
+            rgba(7,19,34,.45) 100%),
+        url("./images/OO6hngb40_mqjAWzRFFQFsGn3MXFN7RyfYsoFfOsMKQSPYAeFAdyh0Y_mGpZrqhT9B4FrAp6sXJsGOTxEqdDPqQ6aoS1Bw1fHqlH-vOXSjcrWZXEaNHfpzfcoNREJSkpTfgx2PZW0PPn-MXIpNGhkjnnreTq3uPm1DVni1vfQUg0kFxyTsP8O0EY6yy4kNCH.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* .hero::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    background-image:
+        linear-gradient(90deg,
+            rgba(7,19,34,.94) 0%,
+            rgba(7,19,34,.84) 45%,
+            rgba(7,19,34,.45) 100%),
+        url("images/images/XTg3Bc3Krp_VSeiUDqLdry8-CjjfH9cX7i7bDWHurdkdoh7svq0VOQYvasM6FUBj00tdbomBLqz18dA_nFfZI-iKZifLpxWjQcpad-LIWn3KeZJ108s5qMm9NRtq6T8PHX45xMKFpDm0HSe2X-kA9pV91dYnFhJ_7D0UIWlqRAU.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 24, 46, 0.76);
+}
+ */
+/* .hero-inner {
+    padding: 85px 0;
+} */
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero .kicker {
+    color: var(--gold);
+    font-weight: 500;
+}
+
+.hero h1 {
+    font-size: clamp(44px, 2vw, 76px);
+    letter-spacing: 0.2px;
+    line-height: 1.03;
+    margin: 40px 0 22px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero-copy {
+    color: #d5dfeb;
+    max-width: 610px;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* .hero-footnote {
+    margin-top: 24px;
+    color: #b9c8d8;
+    font-size: 12px;
+} */
+
+.hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 45px;
+    padding-top: 23px;
+    border-top: 1px solid rgba(255,255,255,.19);
+}
+
+.hero-stat strong {
+    display: block;
+    font-size: 13px;
+    color: white;
+}
+
+.hero-stat span {
+    display: block;
+    color: #bac9d9;
+    font-size: 11px;
+}
+
+/* QUICK TRUST */
+
+.trust-strip {
+    background: white;
+    border-bottom: 1px solid var(--border);
+    padding: 23px 0;
+}
+
+.trust-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trust-icon {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #f7edcf;
+    color: #936d15;
+    font-weight: 900;
+}
+
+.trust-item strong {
+    display: block;
+    color: var(--navy);
+    font-size: 12px;
+}
+
+.trust-item small {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+/* PROBLEM */
+
+.problem-section {
+    background: var(--bg);
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.problem-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.problem-card .number {
+    color: #b1821c;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.problem-card h3 {
+    font-size: 17px;
+    color: var(--navy);
+    margin-bottom: 9px;
+}
+
+.problem-card p {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* ABOUT FEATURE */
+
+.feature-section {
+    background: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.feature-image {
+    position: relative;
+}
+
+.feature-image img {
+    height: 430px;
+    border-radius: 14px;
+}
+
+.image-label {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 15px 18px;
+    border-radius: 9px;
+    background: var(--navy);
+    color: white;
+    max-width: 240px;
+    box-shadow: var(--shadow);
+}
+
+.image-label strong {
+    display: block;
+    font-size: 13px;
+}
+
+.image-label span {
+    color: #d1dce8;
+    font-size: 11px;
+}
+
+.feature-copy p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.feature-points {
+    margin: 23px 0;
+    list-style: none;
+}
+
+.feature-points li {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #344a62;
+}
+
+.feature-points li::before {
+    content: "✓";
+    color: #b1821a;
+    margin-right: 10px;
+}
+
+/* OPPORTUNITIES */
+
+.opportunities {
+    background: var(--bg);
+}
+
+.opportunity-tools {
+    margin-bottom: 27px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 17px;
+}
+
+.filter {
+    border: 1px solid var(--border);
+    background: white;
+    padding: 9px 15px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #53647a;
+}
+
+.filter.active {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+}
+
+.search {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    background: white;
+}
+
+.search:focus {
+    border-color: #577b9f;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 21px;
+}
+
+.opportunity-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    overflow: hidden;
+    transition: .25s;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.card-image {
+    height: 195px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    height: 100%;
+    transition: transform .4s;
+}
+
+.opportunity-card:hover .card-image img {
+    transform: scale(1.04);
+}
+
+.card-badge {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    background: white;
+    color: var(--navy);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h3 {
+    color: var(--navy);
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 9px;
+}
+
+.card-content p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.card-meta {
+    font-size: 11px;
+    color: #53657a;
+    margin-bottom: 16px;
+}
+
+.card-action {
+    display: block;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+    color: #997014;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.empty-state {
+    display: none;
+    text-align: center;
+    color: var(--muted);
+    padding: 30px;
+}
+
+/* HOW */
+
+.how {
+    background: white;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 17px;
+}
+
+.step {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 25px;
+    background: white;
+}
+
+.step-number {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    background: var(--navy);
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 17px;
+}
+
+.step h3 {
+    color: var(--navy);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* REGISTRATION */
+
+.registration {
+    background: var(--bg);
+}
+
+.registration-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.register-side {
+    background: var(--navy);
+    color: white;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.register-side img {
+    height: 245px;
+}
+
+.register-side-content {
+    padding: 25px;
+}
+
+.register-side h3 {
+    font-size: 23px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.register-side p {
+    font-size: 13px;
+    color: #d0dce8;
+    margin-bottom: 20px;
+}
+
+.register-side ul {
+    list-style: none;
+}
+
+.register-side li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 12px;
+    color: #d8e2ec;
+}
+
+.register-side li::before {
+    content: "✓ ";
+    color: var(--gold);
+    font-weight: 900;
+}
+
+.form-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 30px;
+}
+
+.form-box h3 {
+    color: var(--navy);
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+.form-intro {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 23px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field.full {
+    grid-column: 1 / -1;
+}
+
+.field label {
+    display: block;
+    color: #344a62;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    border: 1px solid #dfe5ec;
+    background: white;
+    border-radius: 7px;
+    padding: 13px;
+    outline: none;
+    font-size: 13px;
+    color: var(--text);
+}
+
+.field textarea {
+    min-height: 105px;
+    resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #6887a5;
+}
+
+.consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 11px;
+    color: var(--muted);
+    margin: 5px 0 20px;
+}
+
+.consent input {
+    margin-top: 3px;
+}
+
+.notice {
+    display: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-bottom: 17px;
+}
+
+.notice.success {
+    display: block;
+    background: #e9f7ef;
+    border: 1px solid #c7e8d4;
+    color: #246843;
+}
+
+.notice.error {
+    display: block;
+    background: #fff1f0;
+    border: 1px solid #f0cecb;
+    color: #a33731;
+}
+
+.demo-disclaimer {
+    background: #fff8e8;
+    border: 1px solid #f0dfb5;
+    color: #785d1b;
+    padding: 13px;
+    border-radius: 7px;
+    margin-top: 16px;
+    font-size: 11px;
+}
+
+/* REFERENCE */
+
+.reference {
+    background: white;
+}
+
+.reference-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.reference-box {
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: white;
+}
+
+.reference-box h3 {
+    color: var(--navy);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.reference-box p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.reference-result {
+    display: none;
+    background: #edf3f8;
+    padding: 17px;
+    margin-top: 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.reference-result.visible {
+    display: block;
+}
+
+.reference-result p {
+    margin: 7px 0;
+}
+
+/* PARTNERS */
+
+.partners {
+    background: var(--navy);
+    color: white;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.partners .heading {
+    color: white;
+}
+
+.partners .section-text {
+    color: #cbd8e6;
+}
+
+.partner-points {
+    list-style: none;
+    margin: 22px 0;
+}
+
+.partner-points li {
+    color: #d5dfeb;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.partner-points li::before {
+    content: "✓";
+    color: var(--gold);
+    margin-right: 10px;
+}
+
+.partner-image {
+    position: relative;
+}
+
+.partner-image img {
+    height: 380px;
+    border-radius: 12px;
+}
+
+.partner-image-label {
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: 900;
+    padding: 17px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 17px;
+    left: 17px;
+    right: 17px;
+}
+
+/* ABOUT */
+
+.about {
+    background: var(--bg);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-photo img {
+    height: 410px;
+    border-radius: 12px;
+}
+
+.about-copy p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.about-highlight {
+    background: white;
+    border-left: 4px solid var(--gold);
+    padding: 20px;
+    margin-top: 22px;
+    border-radius: 0 8px 8px 0;
+}
+
+.about-highlight strong {
+    color: var(--navy);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.about-highlight span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.contact-card {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.contact-card h3 {
+    color: var(--navy);
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+.contact-card a {
+    color: #9b741b;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #09192c;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr .7fr;
+    gap: 35px;
+    padding-bottom: 35px;
+}
+
+.footer-about p {
+    color: #aebdce;
+    font-size: 12px;
+    max-width: 360px;
+    margin-top: 15px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.footer-column a {
+    display: block;
+    color: #aebdce;
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.footer-column a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding-top: 18px;
+    color: #8799af;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* FLOATING WHATSAPP */
+
+.wa-float {
+    position: fixed;
+    z-index: 900;
+    right: 20px;
+    bottom: 20px;
+    background: #168353;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 18px;
+    border-radius: 50px;
+    box-shadow: 0 6px 25px rgba(0,0,0,.22);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.wa-float:hover {
+    background: #116c43;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px) {
+    .nav {
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 11px;
+    }
+    .hero-content {
+        text-align: center;
+    }
+    body {
+        text-align: center;
+    }
+
+    .feature-grid,
+    .registration-grid,
+    .partners-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-image img {
+        height: 360px;
+    }
+
+    .register-side img {
+        height: 280px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .partners-grid {
+        gap: 30px;
+    }
+
+    .about-photo img {
+        height: 350px;
+    }
+}
+
+@media(max-width:720px) {
+   /*  section {
+        padding: 62px 0;
+    } */
+
+    /* .topline-inner {
+        justify-content: center;
+        text-align: center;
+    } */
+
+    .header-inner {
+        height: 70px;
+    }
+
+    .brand-mark {
+        width: 42px;
+        height: 42px;
+    }
+
+    .brand-name {
+        font-size: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        padding: 20px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: .25s;
+    }
+
+    .nav.open {
+        transform: translateX(0);
+    }
+
+    .nav a {
+        padding: 16px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 14px;
+    }
+
+    .nav .nav-register {
+        text-align: center;
+        margin-top: 15px;
+        border: 0;
+        padding: 14px;
+    }
+
+    .hero {
+        min-height: auto;
+        background-position: 60% center;
+    }
+    .kicker {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    /* .hero-inner {
+        padding: 70px 0 60px;
+    } */
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-copy {
+        font-size: 14px;
+    }
+
+    .hero-actions .btn {
+        flex: 1 1 100%;
+    }
+
+    .hero-stats {
+        gap: 17px;
+    }
+
+    .trust-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 17px;
+    }
+
+    .problem-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards,
+    .reference-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: 215px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .step {
+        padding: 18px;
+    }
+
+    .form-box {
+        padding: 23px 17px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .field.full {
+        grid-column: auto;
+    }
+
+    .partner-image img {
+        height: 290px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .wa-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 13px 15px;
+    }
+}
+
+@media(max-width:390px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .steps,
+    .trust-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP NOTICE -->
+<!-- <div class="topline">
+    <div class="container topline-inner">
+        <span>Serving Sasolburg · Zamdela · Vaalpark · Surrounding Communities</span>
+        <span>Community opportunities. Zero registration fees.</span>
+    </div>
+</div> -->
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-inner">
+
+        <a href="#home" class="brand">
+            <div class="brand-mark">S</div>
+            <div>
+                <div class="brand-name">SCOF</div>
+                <div class="brand-description">SASOLBURG COMMUNITY OPPORTUNITY FORUM</div>
+            </div>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-expanded="false" aria-label="Open menu">☰</button>
+
+        <nav class="nav" id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#opportunities">Opportunities</a>
+            <a href="#how">How it works</a>
+            <a href="#about">About us</a>
+            <a href="#partners">Partners</a>
+            <a href="#reference">Reference</a>
+            <a href="#register" class="nav-register">Register Now</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-inner">
+        <div class="hero-content">
+
+            <span class="kicker">Sasolburg Community Opportunity Forum</span>
+
+            <h1>
+                YOUR NEXT OPPORTUNITY
+                SHOULD NOT BE
+                <span>OUT OF REACH.</span>
+            </h1>
+
+            <p class="hero-copy">
+                Finding opportunities shouldn't be a struggle.
+                Explore employment information, learnerships, bursaries
+                and skills development opportunities through one community
+                connection point.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#opportunities" class="btn btn-gold">
+                    EXPLORE OPPORTUNITIES →
+                </a>
+
+                <a href="https://wa.me/27664499170?text=Hello%20SCOF%2C%20I%20need%20assistance%20with%20opportunities."
+                   class="btn btn-outline-white" target="_blank" rel="noopener">
+                    TALK TO SCOF ON WHATSAPP
+                </a>
+            </div>
+
+            <!-- <p class="hero-footnote">
+                Registration is free. Stay informed. Take your next step.
+            </p>
+ -->
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <strong>COMMUNITY</strong>
+                    <span>Local connection</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>OPPORTUNITIES</strong>
+                    <span>Information access</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>ZERO FEES</strong>
+                    <span>Free registration</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust-strip">
+    <div class="container trust-inner">
+
+        <div class="trust-item">
+            <div class="trust-icon">✓</div>
+            <div>
+                <strong>Community Focus</strong>
+                <small>Local access and connection</small>
+            </div>
+        </div>
+
+        <div class="trust-item">
+            <div class="trust-icon">⌕</div>
+            <div>
+                <strong>Opportunity Information</strong>
+                <small>Explore different pathways</small>
+            </div>
+        </div>
+
+        <div class="trust-item">
+            <div class="trust-icon">0</div>
+            <div>
+                <strong>Zero Registration Fees</strong>
+                <small>No fee to join SCOF</small>
+            </div>
+        </div>
+
+        <div class="trust-item">
+            <div class="trust-icon">↗</div>
+            <div>
+                <strong>Direct Assistance</strong>
+                <small>Contact SCOF on WhatsApp</small>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- PROBLEMS -->
+<section class="problem-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="kicker">Why SCOF matters</span>
+            <h2 class="heading">The opportunity may exist. Finding it is the challenge.</h2>
+            <p class="section-text">
+                Better access
+                to information, clearer requirements and a reliable place to start.
+            </p>
+        </div>
+
+        <div class="problem-grid">
+
+            <article class="problem-card">
+                <div class="number">01 — ACCESS</div>
+                <h3>Information is everywhere.</h3>
+                <p>Opportunity information can be spread across different pages, contacts, groups and announcements.</p>
+            </article>
+
+            <article class="problem-card">
+                <div class="number">02 — CLARITY</div>
+                <h3>Where do you begin?</h3>
+                <p>Applicants need to understand the opportunity, the requirements and how to apply correctly.</p>
+            </article>
+
+            <article class="problem-card">
+                <div class="number">03 — CONNECTION</div>
+                <h3>Who can help?</h3>
+                <p>When information is unclear, having a direct point of contact makes the process easier to navigate.</p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SCOF FEATURE -->
+<section class="feature-section">
+    <div class="container feature-grid">
+
+        <div class="feature-image">
+            <img
+                src="./images/XTg3Bc3Krp_VSeiUDqLdry8-CjjfH9cX7i7bDWHurdkdoh7svq0VOQYvasM6FUBj00tdbomBLqz18dA_nFfZI-iKZifLpxWjQcpad-LIWn3KeZJ108s5qMm9NRtq6T8PHX45xMKFpDm0HSe2X-kA9pV91dYnFhJ_7D0UIWlqRAU.jpeg"
+                alt="People working together and sharing ideas">
+
+            <div class="image-label">
+                <strong>Community. Information. Opportunity.</strong>
+                <span>Building stronger connections.</span>
+            </div>
+        </div>
+
+        <div class="feature-copy">
+            <span class="kicker">Introducing SCOF</span>
+
+            <h2 class="heading">
+                A clearer way to find opportunities.
+            </h2>
+
+            <p>
+                SCOF is focused on helping people connect with opportunity
+                information and helping organisations communicate opportunities
+                to communities.
+            </p>
+
+            <p>
+                Whether you're looking for employment, workplace experience,
+                training, educational support or project information,
+                SCOF is a starting point to help you explore.
+            </p>
+
+            <ul class="feature-points">
+                <li>Explore different opportunity categories</li>
+                <li>Stay informed about new announcements</li>
+                <li>Find information about application processes</li>
+                <li>Get help through a direct contact channel</li>
+            </ul>
+
+            <a href="#opportunities" class="btn btn-navy">
+                START EXPLORING
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- OPPORTUNITIES -->
+<section class="opportunities" id="opportunities">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="kicker">Explore your options</span>
+            <h2 class="heading">What are you looking for?</h2>
+            <p class="section-text">
+                Start with a category. When verified opportunities are published,
+                their requirements, closing dates and official application details
+                should be displayed.
+            </p>
+        </div>
+
+        <div class="opportunity-tools">
+            <div class="filters">
+                <button class="filter active" data-filter="all">ALL CATEGORIES</button>
+                <button class="filter" data-filter="employment">EMPLOYMENT</button>
+                <button class="filter" data-filter="shutdown">SHUTDOWN</button>
+                <button class="filter" data-filter="learnership">LEARNERSHIPS</button>
+                <button class="filter" data-filter="bursary">BURSARIES</button>
+                <button class="filter" data-filter="training">TRAINING</button>
+            </div>
+
+            <input class="search" type="search" id="search"
+                   placeholder="Search categories or skills..."
+                   aria-label="Search opportunities">
+        </div>
+
+        <div class="cards" id="opportunityCards">
+
+            <article class="opportunity-card" data-category="employment">
+                <div class="card-image">
+                    <img src="./images/_xnG-ug2vG-rVGAF_g7RZFr6O0Y4XXv8fUcw2aPJzIuTWQoYgYJbCglO1Wk6WKj-kIPdxqsE9-XwIGhFacd9bEhmpFmPnr76CgPWbq_pAtOgwszcQewzrBtA0RHYO7NJP1BIFB8agIV1qLoT1_HfIADtjeHTO7V7_oltz6zHqtd_rYU-SZDV9h2ojWEg13qU.jpeg"
+                         alt="Industrial work environment" loading="lazy">
+                    <span class="card-badge">Employment</span>
+                </div>
+                <div class="card-content">
+                    <h3>Employment Opportunities</h3>
+                    <p>Explore general work, entry-level opportunities, skilled positions and recruitment information.</p>
+                    <div class="card-meta">Career information · Work opportunities</div>
+                    <a class="card-action wa-opportunity" href="#">ASK ABOUT EMPLOYMENT →</a>
+                </div>
+            </article>
+
+            <article class="opportunity-card" data-category="shutdown">
+                <div class="card-image">
+                    <img src="./images/xjitlGvrK2PZ8c2pR8yYOKmkQ7t-nhs9y2O1K_-2WQ-UCfGoproUFqXFjEO9eVbWs0l34M4hukleSSWQB4AmJpgLN1vI0ID0XhLL0eig7cmf5-rLko3OoEoKCRslN0EPrBGc9kjGkkszZD9wR31qnGJw-nNmYl5c7Gt9uSwY4TSCLoAVIF5nPfYAZOAIOy5R.jpeg"
+                         alt="Industrial maintenance environment" loading="lazy">
+                    <span class="card-badge">Shutdown work</span>
+                </div>
+                <div class="card-content">
+                    <h3>Industrial Shutdowns</h3>
+                    <p>Explore shutdown project information, industrial maintenance work and contractor recruitment.</p>
+                    <div class="card-meta">Project-based · Industrial sector</div>
+                    <a class="card-action wa-opportunity" href="#">ASK ABOUT SHUTDOWN WORK →</a>
+                </div>
+            </article>
+
+            <article class="opportunity-card" data-category="learnership">
+                <div class="card-image">
+                    <img src="./images/fc1CpWiZhx3WCJE9DFajgPPoiROtj7cZhAmmBEjbBJIfkGDr_6QWqBgdROAfiHibeh5zgzJwi-DpRk65KnnMtGehM222XFzIgc4zLmqx0cfB1mpVTjrNCuKdiBM-YuFULLA8h-OBqE8vjHCTWpUraLNzTJzt97dksL3a_trTOzAhKFC4hbg5k1FFJ7IN9w2-.jpeg"
+                         alt="Students working together" loading="lazy">
+                    <span class="card-badge">Learnerships</span>
+                </div>
+                <div class="card-content">
+                    <h3>Learnership Programmes</h3>
+                    <p>Find out about structured learning programmes, practical experience and skills development.</p>
+                    <div class="card-meta">Learning · Workplace exposure</div>
+                    <a class="card-action wa-opportunity" href="#">ASK ABOUT LEARNERSHIPS →</a>
+                </div>
+            </article>
+
+            <article class="opportunity-card" data-category="bursary">
+                <div class="card-image">
+                    <img src="./images/axBz14-ofRE-NMSyV1D0Q_h4xFMAmIAGeUfhhxG6i23LyK8H97h2xihPmyr58ZdELUMgbs5_im4Yp9NVibV8lIJ7fwCoz84BN5D994LZrJX9hK2gcl8_u43hME4RcwWfxG6z_xB8GZ2cp-lpB_amys5x8CP908MwmoghQcMOJoGGTsA74e4_MFzNPJUNuqZT.jpeg"
+                         alt="Students at an educational institution" loading="lazy">
+                    <span class="card-badge">Bursaries</span>
+                </div>
+                <div class="card-content">
+                    <h3>Education & Bursaries</h3>
+                    <p>Explore education funding information, bursaries, study support and student opportunities.</p>
+                    <div class="card-meta">Education · Student support</div>
+                    <a class="card-action wa-opportunity" href="#">ASK ABOUT BURSARIES →</a>
+                </div>
+            </article>
+
+            <article class="opportunity-card" data-category="training">
+                <div class="card-image">
+                    <img src="./images/LzjmxrhfRxpSzAq9JGXIWHj_Z9VtrHbAlEaUsQTUI5sKaeqzcGIRNBav1vWPvnm1MWjl5CRyCFQg1ixBU9eG7QvojFvExreDLgWhC35iU-0ybYeNvGEoPLS8hJM9JEF7egyTXSGhYf7MHNBAV72XH0j7NwFwtcUGsSLO0mpObZnxXoTCq3Aq1cKfVUO8GH6D.jpeg"
+                         alt="Training and digital skills learning" loading="lazy">
+                    <span class="card-badge">Training</span>
+                </div>
+                <div class="card-content">
+                    <h3>Skills & Training</h3>
+                    <p>Discover training information, technical skills programmes and career development pathways.</p>
+                    <div class="card-meta">Skills · Career development</div>
+                    <a class="card-action wa-opportunity" href="#">ASK ABOUT TRAINING →</a>
+                </div>
+            </article>
+
+            <article class="opportunity-card" data-category="employment">
+                <div class="card-image">
+                    <img src="./images/CgU4fQzrAvIUmL46qXZtB3MJ8A4hB9Khbfs0CrPs59rVyuv_BAmgV5V1ckdAA-uH06BUQoZRfkqxQ2vk7JnRWpEP4VkjlK4EDgJjh_VHfzSqIPh4taGO0oQRvagk-8ID3UZ2GyQoTmIy6jXxdnUllAie77g3QOmJfxGxQLzv80bQMRysTpPgWMsECHZ6M9Dl.jpeg"
+                         alt="Community teamwork and project collaboration" loading="lazy">
+                    <span class="card-badge">Community projects</span>
+                </div>
+                <div class="card-content">
+                    <h3>Community Projects</h3>
+                    <p>Stay connected with local programmes, initiatives, project participation and community information.</p>
+                    <div class="card-meta">Community · Project information</div>
+                    <a class="card-action wa-opportunity" href="#">ASK ABOUT PROJECTS →</a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            No matching categories found. Try another search.
+        </div>
+
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="kicker">Getting started</span>
+            <h2 class="heading">A simple way forward.</h2>
+            <p class="section-text">
+                You don't need to figure everything out at once.
+                Start by connecting with SCOF.
+            </p>
+        </div>
+
+        <div class="steps">
+
+            <article class="step">
+                <div class="step-number">01</div>
+                <h3>Register</h3>
+                <p>Tell us your area, interests and skills so you can begin connecting with opportunity information.</p>
+            </article>
+
+            <article class="step">
+                <div class="step-number">02</div>
+                <h3>Stay Informed</h3>
+                <p>Keep checking for updates and opportunity information that may be relevant to you.</p>
+            </article>
+
+            <article class="step">
+                <div class="step-number">03</div>
+                <h3>Understand & Apply</h3>
+                <p>Check the official requirements, closing date and application instructions before applying.</p>
+            </article>
+
+            <article class="step">
+                <div class="step-number">04</div>
+                <h3>Ask for Help</h3>
+                <p>If you need assistance, contact SCOF directly and explain what you're looking for.</p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- REGISTRATION -->
+<section class="registration" id="register">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="kicker">Community registration</span>
+            <h2 class="heading">Don't know where to start? Start here.</h2>
+            <p class="section-text">
+                Register your interest and tell SCOF what opportunities
+                you would like information about.
+            </p>
+        </div>
+
+        <div class="registration-grid">
+
+            <div class="register-side">
+                <img src="./images/VBlwHcldsFs7FE97WozQ9KQJnS-CeWn0BTbRruZsOSdiYb6MDfOexH3EEoVME7-Qn17CG9JI1mo_NU0JAC9ebRCtZrTat7_gOUIwab2WVGEj_HN_tyzsfkIMtsCAsSGmycZYYCmfd7jTBDXESt8w_PqHwuBgw5Sxh9T9v5DU_UU.jpeg"
+                     alt="People learning and preparing for opportunities"
+                     loading="lazy">
+
+                <div class="register-side-content">
+                    <h3>Take the first step towards accessing information.</h3>
+                    <p>
+                        Registration helps SCOF understand community interest
+                        and support communication around opportunities.
+                    </p>
+
+                    <ul>
+                        <li>Registration is free</li>
+                        <li>Tell us about your skills</li>
+                        <li>Choose your opportunity interests</li>
+                        <li>Get a demonstration reference</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <h3>Register your profile</h3>
+                <p class="form-intro">
+                    Complete the form. Fields marked * are required.
+                </p>
+
+                <div class="notice" id="formNotice"></div>
+
+                <form id="registrationForm">
+                    <div class="form-grid">
+
+                        <div class="field full">
+                            <label for="name">Full name and surname *</label>
+                            <input id="name" name="name" required
+                                   minlength="2" maxlength="100"
+                                   placeholder="Your full name">
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone / WhatsApp *</label>
+                            <input id="phone" name="phone" type="tel"
+                                   required maxlength="20"
+                                   placeholder="Your contact number">
+                        </div>
+
+                        <div class="field">
+                            <label for="area">Area *</label>
+                            <select id="area" name="area" required>
+                                <option value="">Select your area</option>
+                                <option>Sasolburg</option>
+                                <option>Zamdela</option>
+                                <option>Vaalpark</option>
+                                <option>Viljoensdrif</option>
+                                <option>Deneysville</option>
+                                <option>Oranjeville</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="interest">What are you looking for? *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Choose opportunity</option>
+                                <option>Employment</option>
+                                <option>Shutdown Work</option>
+                                <option>Learnerships</option>
+                                <option>Bursaries</option>
+                                <option>Training</option>
+                                <option>Community Projects</option>
+                                <option>Any Opportunity</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="experience">Experience</label>
+                            <select id="experience" name="experience">
+                                <option value="">Choose level</option>
+                                <option>No experience</option>
+                                <option>Entry level</option>
+                                <option>Some experience</option>
+                                <option>Experienced</option>
+                                <option>Qualified / certified</option>
+                            </select>
+                        </div>
+
+                        <div class="field full">
+                            <label for="skills">Skills, qualifications or experience</label>
+                            <textarea id="skills" name="skills"
+                                      maxlength="1000"
+                                      placeholder="Tell us about your skills, qualifications or work experience."></textarea>
+                        </div>
+
+                    </div>
+
+                    <label class="consent">
+                        <input type="checkbox" id="consent" required>
+                        <span>I consent to my information being used for this demonstration registration. I understand registration does not guarantee employment.</span>
+                    </label>
+
+                    <button class="btn btn-navy full" type="submit">
+                        SUBMIT REGISTRATION →
+                    </button>
+                </form>
+
+                <div class="demo-disclaimer">
+                    <strong>Demonstration only.</strong> This form stores
+                    information in this browser only. It is not connected to
+                    SCOF's real registration system. Please do not enter
+                    sensitive or confidential information.
+                </div>
+
+                <a class="btn btn-whatsapp full" style="margin-top:12px"
+                   href="https://wa.me/27664499170?text=Hello%20SCOF%2C%20I%20need%20help%20registering."
+                   target="_blank" rel="noopener">
+                    NEED HELP? WHATSAPP SCOF
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- REFERENCE -->
+<section class="reference" id="reference">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="kicker">Registration assistance</span>
+            <h2 class="heading">Have a reference number?</h2>
+            <p class="section-text">
+                Look up a demonstration registration saved in this browser,
+                or contact SCOF if you need help with your reference.
+            </p>
+        </div>
+
+        <div class="reference-grid">
+
+            <div class="reference-box">
+                <h3>Reference lookup</h3>
+                <p>Enter your demonstration reference below.</p>
+
+                <form id="lookupForm">
+                    <div class="field">
+                        <label for="refInput">Reference number</label>
+                        <input id="refInput" required
+                               placeholder="SCOF-2026-123456">
+                    </div>
+                    <button class="btn btn-navy" type="submit">
+                        LOOK UP REFERENCE
+                    </button>
+                </form>
+
+                <div class="reference-result" id="referenceResult"></div>
+            </div>
+
+            <div class="reference-box">
+                <h3>Can't find your reference?</h3>
+                <p>
+                    Don't worry. Contact SCOF directly and explain that
+                    you need help with your registration reference.
+                </p>
+
+                <a class="btn btn-whatsapp full"
+                   href="https://wa.me/27664499170?text=Hello%20SCOF%2C%20I%20need%20help%20finding%20my%20registration%20reference."
+                   target="_blank" rel="noopener">
+                    CONTACT SCOF ON WHATSAPP
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners" id="partners">
+    <div class="container partners-grid">
+
+        <div>
+            <span class="kicker">Employer & organisation engagement</span>
+
+            <h2 class="heading">
+                Your opportunities. Our communities. A stronger connection.
+            </h2>
+
+            <p class="section-text">
+                SCOF welcomes conversations with employers, contractors,
+                training institutions and organisations seeking to share
+                opportunities, programmes and community initiatives.
+            </p>
+
+            <ul class="partner-points">
+                <li>Opportunity information sharing</li>
+                <li>Community engagement</li>
+                <li>Recruitment programme communication</li>
+                <li>Skills development partnerships</li>
+            </ul>
+
+            <a class="btn btn-gold"
+               href="https://wa.me/27664499170?text=Hello%20SCOF%2C%20I%20am%20representing%20an%20organisation%20and%20would%20like%20to%20discuss%20a%20partnership."
+               target="_blank" rel="noopener">
+                DISCUSS A PARTNERSHIP →
+            </a>
+        </div>
+
+        <div class="partner-image">
+            <img src="./images/VirkihC1aUh7SqKvUEmyWm5TArBuIUtt9wI63M_j8zVbM-8_E9eLbdGekk7k1Eb20pJa1PPRGsyoV4fe2o1DzxVYVzPA4j3RFaxEIz4UkoW98O_r0Ps4hytVcFgsnYGMYhVsMoV2oUCsQz_nvAMsO4Wa5_MwG0oskM_lmbvhYPJTztSfymLywge5sy04gCDi.jpeg"
+                 alt="Team collaboration and partnership"
+                 loading="lazy">
+
+            <div class="partner-image-label">
+                CONNECTING ORGANISATIONS WITH COMMUNITIES
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="container about-grid">
+
+        <div class="about-photo">
+            <img src="./images/OhEI1e9qyhdYT2oqKr3OmoqzTCWr03CqQ8-4UqhXBXMhUxWMJ8ufCcIsleWDX5jbKLS-OWOkdgiyIm_uyJofTvmDDkR081JTjCZyBBzrAIBYNBsDxYsYUGz1aE6Gkmdvw2avtTms9yga1LhvUyO4T83JTQ6fTj7tIE7PpPR31Eh09DjlanTUzOVTuZDsiVgg.jpeg"
+                 alt="Community members connecting"
+                 loading="lazy">
+        </div>
+
+        <div class="about-copy">
+            <span class="kicker">Who we are</span>
+            <h2 class="heading">Built around community and access.</h2>
+
+            <p>
+                Sasolburg Community Opportunity Forum (SCOF) is a
+                community-focused initiative aimed at connecting people
+                to information about employment, education, skills
+                development and other opportunities.
+            </p>
+
+            <p>
+                We believe that access to information, communication
+                and connections can help people make better decisions
+                about their next steps.
+            </p>
+
+            <p>
+                SCOF is a connection point. Employers and opportunity
+                providers remain responsible for their own selection
+                criteria, recruitment processes and final decisions.
+            </p>
+
+            <div class="about-highlight">
+                <strong>AMASHIYA AMAHLE</strong>
+                <span>NPO 304-164</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="kicker">We're easy to reach</span>
+            <h2 class="heading">Need assistance? Let's talk.</h2>
+            <p class="section-text">
+                You don't have to navigate everything alone.
+                Reach SCOF directly for enquiries, registration assistance
+                or partnership conversations.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <h3>WhatsApp support</h3>
+                <p>For enquiries, registration help and opportunity information.</p>
+                <a href="https://wa.me/27664499170?text=Hello%20SCOF%2C%20I%20need%20assistance."
+                   target="_blank" rel="noopener">
+                    +27 66 449 9170 →
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p>For official enquiries and partnership communication.</p>
+                <a href="mailto:info@scof.org.za">
+                    info@scof.org.za →
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Community registration</h3>
+                <p>Start with your registration or ask for assistance.</p>
+                <a href="#register">
+                    REGISTER WITH SCOF →
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+                <a href="#home" class="brand">
+                    <div class="brand-mark">S</div>
+                    <div>
+                        <div class="brand-name" style="color:white">SCOF</div>
+                        <div class="brand-description" style="color:#aebdce">
+                            COMMUNITY OPPORTUNITY FORUM
+                        </div>
+                    </div>
+                </a>
+
+                <p>
+                    Helping communities connect with opportunity information,
+                    education, skills development and employment pathways.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick links</h4>
+                <a href="#opportunities">Opportunities</a>
+                <a href="#register">Registration</a>
+                <a href="#reference">Reference lookup</a>
+                <a href="#how">How it works</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <a href="#about">About SCOF</a>
+                <a href="#partners">Partnerships</a>
+                <a href="#contact">Contact</a>
+                <a href="https://wa.me/27664499170" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 SCOF · Sasolburg Community Opportunity Forum</span>
+            <span>AMASHIYA AMAHLE · NPO 304-164</span>
+        </div>
+
+    </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float"
+   href="https://wa.me/27664499170?text=Hello%20SCOF%2C%20I%20need%20assistance."
+   target="_blank" rel="noopener"
+   aria-label="Chat with SCOF on WhatsApp">
+    <span>●</span> CHAT WITH SCOF
+</a>
+
+<script>
+/* WHATSAPP CONFIG */
+const SCOF_WHATSAPP = '27664499170';
+
+/* NAVIGATION */
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+
+function closeMenu() {
+    mainNav.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.innerHTML = '☰';
+}
+
+menuToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    document.body.classList.toggle('menu-open', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.innerHTML = isOpen ? '✕' : '☰';
+});
+
+mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
+});
+
+/* OPPORTUNITY FILTERS */
+const filterButtons = document.querySelectorAll('.filter');
+const cards = document.querySelectorAll('.opportunity-card');
+const search = document.getElementById('search');
+const emptyState = document.getElementById('emptyState');
+
+let selectedFilter = 'all';
+
+function updateCards() {
+    const query = search.value.trim().toLowerCase();
+    let count = 0;
+
+    cards.forEach(card => {
+        const matchesCategory =
+            selectedFilter === 'all' ||
+            card.dataset.category === selectedFilter;
+
+        const matchesText =
+            card.textContent.toLowerCase().includes(query);
+
+        const visible = matchesCategory && matchesText;
+
+        card.style.display = visible ? '' : 'none';
+
+        if (visible) count++;
+    });
+
+    emptyState.style.display = count ? 'none' : 'block';
+}
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(item => item.classList.remove('active'));
+        button.classList.add('active');
+        selectedFilter = button.dataset.filter;
+        updateCards();
+    });
+});
+
+search.addEventListener('input', updateCards);
+
+/* WHATSAPP OPPORTUNITY MESSAGES */
+document.querySelectorAll('.wa-opportunity').forEach(link => {
+    const card = link.closest('.opportunity-card');
+    const title = card.querySelector('h3').textContent.trim();
+
+    const message =
+        'Hello SCOF, I would like to enquire about ' + title +
+        ' and any available opportunities or information.';
+
+    link.href = 'https://wa.me/' + SCOF_WHATSAPP +
+        '?text=' + encodeURIComponent(message);
+
+    link.target = '_blank';
+    link.rel = 'noopener';
+});
+
+/* DEMO REGISTRATION */
+const form = document.getElementById('registrationForm');
+const formNotice = document.getElementById('formNotice');
+
+function getRegistrations() {
+    try {
+        return JSON.parse(localStorage.getItem('scof_demo_data') || '[]');
+    } catch {
+        return [];
+    }
+}
+
+function displayNotice(message, type) {
+    formNotice.className = 'notice ' + type;
+    formNotice.textContent = message;
+}
+
+form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+
+    const phone = document.getElementById('phone').value.trim();
+    const name = document.getElementById('name').value.trim();
+
+    if (name.length < 2 || phone.length < 7) {
+        displayNotice('Please check your name and contact number.', 'error');
+        return;
+    }
+
+    const records = getRegistrations();
+    const randomNumber = Math.floor(100000 + Math.random() * 900000);
+    const reference = 'SCOF-' + new Date().getFullYear() + '-' + randomNumber;
+
+    const record = {
+        reference: reference,
+        name: name,
+        phone: phone,
+        area: document.getElementById('area').value,
+        interest: document.getElementById('interest').value,
+        experience: document.getElementById('experience').value,
+        skills: document.getElementById('skills').value.trim(),
+        created: new Date().toLocaleString()
+    };
+
+    records.push(record);
+
+    try {
+        localStorage.setItem('scof_demo_data', JSON.stringify(records));
+    } catch {
+        displayNotice(
+            'Unable to save in browser storage. Please try again.',
+            'error'
+        );
+        return;
+    }
+
+    displayNotice(
+        'DEMO SUCCESS! Your reference is ' + reference +
+        '. Save it. This is a local demonstration and is not an official SCOF registration.',
+        'success'
+    );
+
+    form.reset();
+
+    document.getElementById('refInput').value = reference;
+});
+
+/* DEMO REFERENCE LOOKUP */
+const lookupForm = document.getElementById('lookupForm');
+const refInput = document.getElementById('refInput');
+const referenceResult = document.getElementById('referenceResult');
+
+lookupForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const reference = refInput.value.trim().toUpperCase();
+    const records = getRegistrations();
+
+    const match = records.find(item =>
+        item.reference.toUpperCase() === reference
+    );
+
+    referenceResult.classList.add('visible');
+    referenceResult.innerHTML = '';
+
+    if (!match) {
+        const message = document.createElement('p');
+        message.textContent =
+            'Reference not found in this browser demonstration. Please check it or contact SCOF.';
+        referenceResult.appendChild(message);
+        return;
+    }
+
+    const heading = document.createElement('strong');
+    heading.textContent = 'Demo registration located';
+
+    const details = [
+        'Name: ' + match.name,
+        'Reference: ' + match.reference,
+        'Area: ' + match.area,
+        'Interest: ' + match.interest,
+        'Date: ' + match.created
+    ];
+
+    referenceResult.appendChild(heading);
+
+    details.forEach(text => {
+        const p = document.createElement('p');
+        p.textContent = text;
+        referenceResult.appendChild(p);
+    });
+});
+
+/* REFERENCE HELP MESSAGE */
+refInput.addEventListener('input', () => {
+    refInput.value = refInput.value.toUpperCase();
+});
+</script>
+
+</body>
+</html>
